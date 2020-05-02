@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoginControl from './sample';
-import Toggle from './toggle';
-import Clock from './clock';
+import App from './app'
 
 
   function formatDate(date) {
@@ -45,45 +43,12 @@ function Comment(props) {
         );
 
 }
-const comment = {
-    date: new Date(),
-    text: 'I hope you enjoy learning React!',
-    author: {
-      name: 'Hello Kitty',
-      avatarUrl: 'https://placekitten.com/g/64/64',
-    },
-  };
-  
 
-function App(){
-  return (
-    <div>
-      <LoginControl />
-      <Toggle />
-      <Comment
-        date={comment.date}
-        text={comment.text}
-        author={comment.author}
-        />
-         <Clock />
-         <Clock />
-         <Comment
-        date={comment.date}
-        text={comment.text}
-        author={comment.author}
-        />
-        <button onClick={Clock}>
-  Clock
-</button>
-    </div>
-  );
-}
+export default Comment;
+
+
 
 ReactDOM.render(
     <App />,
     document.getElementById('root')
 );
-
-
-
-//setInterval(Comment,1000);
