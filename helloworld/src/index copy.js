@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoginControl from './sample';
-import Toggle from './toggle';
-import Clock from './clock';
+
 
 
   function formatDate(date) {
     return date.toLocaleDateString();
   }
-
 
 
 function Avatar(props){
@@ -54,33 +51,12 @@ const comment = {
     },
   };
   
-
-function App(){
-  return (
-    <div>
-      <LoginControl />
-      <Toggle />
-      <Comment
-        date={comment.date}
-        text={comment.text}
-        author={comment.author}
-        />
-         <Clock />
-         <Clock />
-         <Comment
-        date={comment.date}
-        text={comment.text}
-        author={comment.author}
-        />
-        <button onClick={Clock}>
-  Clock
-</button>
-    </div>
-  );
-}
-
 ReactDOM.render(
-    <App />,
+    <Comment
+        date={comment.date}
+        text={comment.text}
+        author={comment.author}
+        />,
     document.getElementById('root')
 );
 
