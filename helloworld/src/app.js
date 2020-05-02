@@ -6,10 +6,13 @@ import Comment from './index';
 import NameForm from './nameForm'
 import FlavorForm from './selectTab'
 import Calculator from './waterCheck'
+import SignUpDialog from './dialog'
+
 
 function App(){
     return (
       <div>
+          <SignUpDialog /><hr />
           <Calculator /><hr />
           <fieldset>
           <FlavorForm /><hr />
