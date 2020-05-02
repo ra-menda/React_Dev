@@ -3,19 +3,25 @@ import LoginControl from './sample';
 import Toggle from './toggle';
 import Clock from './clock';
 import Comment from './index';
+import NameForm from './nameForm'
+import FlavorForm from './selectTab'
+import Calculator from './waterCheck'
 
 function App(){
     return (
       <div>
-        <LoginControl />
-        <hr />
+          <Calculator /><hr />
+          <fieldset>
+          <FlavorForm /><hr />
+          </fieldset>
+           <NameForm /><hr />
+        <LoginControl /><hr />        
         <Toggle /> <hr />
         <Comment
           date={comment.date}
           text={comment.text}
           author={comment.author}
-          />
-           <hr />
+          /><hr />           
            <Clock /> <hr />
            <Clock /> <hr />
            <Comment
